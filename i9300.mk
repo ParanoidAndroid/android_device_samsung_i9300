@@ -19,6 +19,13 @@ $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 
 LOCAL_PATH := device/samsung/i9300
 
+# Install prebuilt kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/kernel:kernel
+
+# Install i9300 kernel modules from prebuilt
+$(call inherit-product, $(LOCAL_PATH)/i9300-modules.mk)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
