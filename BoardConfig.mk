@@ -31,7 +31,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_i9300_defconfig
 
 TARGET_GCC_VERSION := 4.6
-#TARGET_USE_O3 := true
+TARGET_USE_O3 := true
 #TARGET_USE_LINARO_STRING_ROUTINES := true
 
 # assert
