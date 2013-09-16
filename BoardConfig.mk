@@ -53,6 +53,7 @@ BOARD_SEPOLICY_UNION := \
     rild.te \
     system.te \
     ueventd.te \
+    vold.te \
     wpa_supplicant.te
 
 # assert
